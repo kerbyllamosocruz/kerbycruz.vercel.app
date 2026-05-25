@@ -31,8 +31,8 @@ const projectsData = [
     livePreview: 'https://bask-cafe.vercel.app', 
     github: 'https://github.com/kerbyllamosocruz/bask-cafe.vercel.app' 
   },
-  { id: 'java-store', title: 'Java Mini Store', category: 'Java', img: '/assets/javaministore.png', desc: 'A simple store management system built with Java.', github: '#' },
-  { id: 'string-manipulation', title: 'String Manipulation', category: 'Java', img: '/assets/stringmanipulation.png', desc: 'A Java program demonstrating various string manipulation techniques.', github: '#' },
+  { id: 'java-store', title: 'Java Mini Store', category: 'Java', img: '/assets/javaministore.png', desc: 'A simple store management system built with Java.', github: 'https://github.com/kerbyllamosocruz/java-mini-store' },
+  { id: 'string-manipulation', title: 'String Manipulation', category: 'Java', img: '/assets/stringmanipulation.png', desc: 'A Java program demonstrating various string manipulation techniques.', github: 'https://github.com/kerbyllamosocruz/string-manipulation' },
   { id: 'oop-project', title: 'OOP Final Project', category: 'App', img: '/assets/finalproject.png', desc: 'A project created using Visual Studio .NET Windows Forms.', github: '#' },
   { id: 'marine-infographics', title: 'Marine Infographics', category: 'Design', img: '/assets/marineinfographics.png', desc: 'An informative infographic about marine life.', livePreview: '/assets/marineinfographics.png' },
   { id: 'book-cover', title: 'Multimedia: Book Cover', category: 'Design', img: '/assets/bookcover.png', desc: 'A creative book cover design project.', livePreview: '/assets/bookcover.png' },

@@ -3,7 +3,7 @@ import { Download, ChevronRight } from 'lucide-react';
 
 const Home = () => {
   return (
-    <div className="flex-center" style={{ minHeight: '100vh', paddingTop: '80px' }}>
+    <div className="flex-center" style={{ minHeight: 'calc(100vh - 250px)' }}>
       <div className="grid-2" style={{ alignItems: 'center' }}>
         
         <motion.div 

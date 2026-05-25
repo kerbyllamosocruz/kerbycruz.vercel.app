@@ -10,7 +10,7 @@ import InteractiveBackground from './components/InteractiveBackground';
 
 const MainPage = () => (
   <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
-    <section id="home"><Home /></section>
+    <section id="home" style={{ marginBottom: '25vh' }}><Home /></section>
     <section id="about"><About /></section>
     <section id="project"><Projects /></section>
     <section id="connect"><Connect /></section>
