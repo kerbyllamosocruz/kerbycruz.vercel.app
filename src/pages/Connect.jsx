@@ -136,9 +136,9 @@ const Connect = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" disabled={status === 'submitting'} className="bg-[#a395e9] hover:bg-[#8d7cd9] text-white font-semibold py-4 px-8 rounded-xl transition-colors mt-2 flex items-center justify-center gap-2">
+                <button type="submit" disabled={status === 'submitting'} className="btn btn-primary mt-2">
                   {status === 'submitting' ? 'Sending...' : (
-                    <>Send Message <Send size={18} /></>
+                    <>Send Message <Send size={20} /></>
                   )}
                 </button>
               </form>
