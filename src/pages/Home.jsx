@@ -4,7 +4,7 @@ import resumeFile from '../assets/resume.pdf';
 
 const Home = () => {
   return (
-    <div className="flex-center" style={{ minHeight: 'calc(100vh - 250px)' }}>
+    <div className="flex-center pt-32" style={{ minHeight: 'calc(100vh - 250px)' }}>
       <div className="grid-2" style={{ alignItems: 'center' }}>
         
         <motion.div 
