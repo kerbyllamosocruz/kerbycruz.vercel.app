@@ -45,7 +45,7 @@ const Home = () => {
             width: '350px', 
             height: '350px', 
             borderRadius: '50%',
-            background: '#FFA500',
+            background: '#a395e9',
             padding: '5px',
             boxShadow: '0 20px 40px rgba(0,0,0,0.4)'
           }}>

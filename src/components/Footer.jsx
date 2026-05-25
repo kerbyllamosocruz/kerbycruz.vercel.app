@@ -1,33 +1,36 @@
-import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="footer glass-panel" style={{ marginTop: 'auto', borderRadius: '1rem 1rem 0 0', padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
-      <div className="footer_left">
-        <a href="/">
-          <img src={logo} alt="KC Logo" className="footer_logo" style={{ height: '50px' }} />
+    <footer className="bg-slate-900 border-t border-slate-800 pt-16 pb-8 mt-auto">
+      <div className="max-w-5xl mx-auto px-4 flex flex-col items-center">
+        <a href="#home" className="mb-8">
+          <h1 className="text-3xl font-bold gradient-text">Kerby Cruz</h1>
         </a>
-      </div>
-      
-      <div className="footer_center" style={{ textAlign: 'center', flex: 1, minWidth: '200px' }}>
-        <p style={{ fontWeight: 'bold' }}>Kerby Llamoso Cruz © {new Date().getFullYear()}</p>
-        <p className="rights" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>All Rights Reserved</p>
-      </div>
-      
-      <div className="footer_right" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-        <a href="https://facebook.com/kerbyllamosocruz" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <FaFacebook size={20} className="social_icon" />
-          <span>Facebook.com/kerbyllamosocruz</span>
-        </a>
-        <a href="https://instagram.com/kerbyllamosocruz" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <FaInstagram size={20} className="social_icon" />
-          <span>Instagram.com/kerbyllamosocruz</span>
-        </a>
-        <a href="https://github.com/kerbycruz" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <FaGithub size={20} className="social_icon" />
-          <span>Github.com/kerbycruz</span>
-        </a>
+        
+        <ul className="flex flex-wrap justify-center gap-6 mb-8 text-sm font-medium text-slate-300">
+          <li><a href="#home" className="hover:text-[#a395e9] transition-colors">Home</a></li>
+          <li><a href="#about" className="hover:text-[#a395e9] transition-colors">About</a></li>
+          <li><a href="#project" className="hover:text-[#a395e9] transition-colors">Works</a></li>
+          <li><a href="#connect" className="hover:text-[#a395e9] transition-colors">Connect</a></li>
+        </ul>
+
+        <div className="flex gap-6 mb-12">
+          <a href="https://facebook.com/kerbyllamosocruz" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-[#a395e9] transition-colors">
+            <FaFacebook size={24} />
+          </a>
+          <a href="https://linkedin.com/in/kerbyllamosocruz" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-[#a395e9] transition-colors">
+            <FaLinkedin size={24} />
+          </a>
+          <a href="https://github.com/kerbycruz" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-[#a395e9] transition-colors">
+            <FaGithub size={24} />
+          </a>
+        </div>
+
+        <span className="text-sm text-slate-500">
+          &#169; {new Date().getFullYear()} Kerby Llamoso Cruz. All rights reserved.
+        </span>
       </div>
     </footer>
   );

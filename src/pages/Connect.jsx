@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, CheckCircle } from 'lucide-react';
+import { Send, CheckCircle, Phone } from 'lucide-react';
 
 const Connect = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -69,21 +69,21 @@ const Connect = () => {
         >
           <h3 className="text-xl font-bold mb-2 text-center md:text-left text-slate-200">Talk to me</h3>
           
-          <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:border-indigo-500/50 transition-colors">
-            <Send size={28} className="text-indigo-400 mb-3" />
+          <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:border-[#a395e9]/50 transition-colors">
+            <Send size={28} className="text-[#a395e9] mb-3" />
             <h4 className="text-lg font-bold text-slate-200 mb-1">Email</h4>
-            <span className="text-sm text-slate-400 mb-4">user@gmail.com</span>
-            <a href="mailto:user@gmail.com" className="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center gap-1 transition-colors">
+            <span className="text-sm text-slate-400 mb-4">kerbyllamosocruz@gmail.com</span>
+            <a href="mailto:user@gmail.com" className="text-[#a395e9] hover:text-[#a395e9] text-sm font-medium flex items-center gap-1 transition-colors">
               Write Me <span className="text-lg leading-none">→</span>
             </a>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:border-indigo-500/50 transition-colors">
-            <CheckCircle size={28} className="text-indigo-400 mb-3" />
-            <h4 className="text-lg font-bold text-slate-200 mb-1">Whatsapp</h4>
-            <span className="text-sm text-slate-400 mb-4">6969696969</span>
-            <a href="https://api.whatsapp.com/send?phone=+916969696969&text=Hey there!" target="_blank" rel="noreferrer" className="text-indigo-400 hover:text-indigo-300 text-sm font-medium flex items-center gap-1 transition-colors">
-              Write Me <span className="text-lg leading-none">→</span>
+          <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col items-center text-center shadow-lg hover:border-[#a395e9]/50 transition-colors">
+            <Phone size={28} className="text-[#a395e9] mb-3" />
+            <h4 className="text-lg font-bold text-slate-200 mb-1">Phone</h4>
+            <span className="text-sm text-slate-400 mb-4">+63 920 458 7096</span>
+            <a href="tel:+639204587096" className="text-[#a395e9] hover:text-[#a395e9] text-sm font-medium flex items-center gap-1 transition-colors">
+              Call Me <span className="text-lg leading-none">→</span>
             </a>
           </div>
         </motion.div>
@@ -103,7 +103,7 @@ const Connect = () => {
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                 className="flex flex-col items-center justify-center gap-4 py-12"
               >
-                <CheckCircle size={64} className="text-indigo-500" />
+                <CheckCircle size={64} className="text-[#a395e9]" />
                 <h3 className="text-2xl font-bold text-slate-200">Message Sent!</h3>
                 <p className="text-slate-400">Thank you for reaching out.</p>
               </motion.div>
@@ -113,7 +113,7 @@ const Connect = () => {
                   <label htmlFor="name" className="absolute -top-3 left-4 bg-slate-900 px-2 text-sm font-semibold text-slate-400">Name</label>
                   <input 
                     type="text" id="name" name="name" value={formData.name} onChange={handleChange} required
-                    className="w-full bg-transparent border border-slate-700 rounded-xl px-4 py-4 text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors"
+                    className="w-full bg-transparent border border-slate-700 rounded-xl px-4 py-4 text-slate-200 focus:outline-none focus:border-[#a395e9] transition-colors"
                     placeholder="Enter name"
                   />
                 </div>
@@ -122,7 +122,7 @@ const Connect = () => {
                   <label htmlFor="email" className="absolute -top-3 left-4 bg-slate-900 px-2 text-sm font-semibold text-slate-400">Mail</label>
                   <input 
                     type="email" id="email" name="email" value={formData.email} onChange={handleChange} required
-                    className="w-full bg-transparent border border-slate-700 rounded-xl px-4 py-4 text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors"
+                    className="w-full bg-transparent border border-slate-700 rounded-xl px-4 py-4 text-slate-200 focus:outline-none focus:border-[#a395e9] transition-colors"
                     placeholder="Enter email"
                   />
                 </div>
@@ -131,12 +131,12 @@ const Connect = () => {
                   <label htmlFor="message" className="absolute -top-3 left-4 bg-slate-900 px-2 text-sm font-semibold text-slate-400">Message</label>
                   <textarea 
                     id="message" name="message" value={formData.message} onChange={handleChange} required
-                    className="w-full bg-transparent border border-slate-700 rounded-xl px-4 py-4 text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors min-h-[160px] resize-y"
+                    className="w-full bg-transparent border border-slate-700 rounded-xl px-4 py-4 text-slate-200 focus:outline-none focus:border-[#a395e9] transition-colors min-h-[160px] resize-y"
                     placeholder="Write your Message"
                   ></textarea>
                 </div>
 
-                <button type="submit" disabled={status === 'submitting'} className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-8 rounded-xl transition-colors mt-2 flex items-center justify-center gap-2">
+                <button type="submit" disabled={status === 'submitting'} className="bg-[#a395e9] hover:bg-[#8d7cd9] text-white font-semibold py-4 px-8 rounded-xl transition-colors mt-2 flex items-center justify-center gap-2">
                   {status === 'submitting' ? 'Sending...' : (
                     <>Send Message <Send size={18} /></>
                   )}
