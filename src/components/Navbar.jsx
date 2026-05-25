@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.png';
+import resumeFile from '../assets/resume.pdf';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,13 +85,13 @@ const Navbar = () => {
                 className="relative px-5 py-2 text-sm font-semibold tracking-wide text-slate-300 hover:text-white transition-colors group"
               >
                 {link.name}
-                <span className="absolute inset-0 w-full h-full bg-indigo-500/0 group-hover:bg-indigo-500/20 rounded-full transition-colors duration-300 -z-10"></span>
+                <span className="absolute inset-0 w-full h-full bg-[#a395e9]/0 group-hover:bg-[#a395e9]/20 rounded-full transition-colors duration-300 -z-10"></span>
               </a>
             ))}
             <a 
-              href="/assets/resume.pdf" 
-              download 
-              className="ml-4 px-6 py-2.5 text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-500 rounded-full shadow-[0_0_15px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.6)] transition-all duration-300 transform hover:-translate-y-0.5"
+              href={resumeFile} 
+              download="Kerby_Cruz_Resume.pdf"
+              className="ml-4 px-6 py-2.5 text-sm font-bold text-[#a395e9] bg-[#a395e9]/10 border border-[#a395e9]/30 hover:bg-[#a395e9]/20 hover:border-[#a395e9]/50 rounded-full shadow-[0_0_15px_rgba(163,149,233,0.1)] hover:shadow-[0_0_25px_rgba(163,149,233,0.3)] transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Resume
             </a>
@@ -114,7 +115,7 @@ const Navbar = () => {
                     key={link.name}
                     href={link.path} 
                     onClick={closeMenu} 
-                    className="block px-5 py-3.5 text-base font-medium text-slate-200 hover:text-indigo-400 hover:bg-white/5 rounded-xl transition-all"
+                    className="block px-5 py-3.5 text-base font-medium text-slate-200 hover:text-[#a395e9] hover:bg-white/5 rounded-xl transition-all"
                   >
                     {link.name}
                   </motion.a>
@@ -123,9 +124,9 @@ const Navbar = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: navLinks.length * 0.05 }}
-                  href="/assets/resume.pdf" 
-                  download 
-                  className="block px-5 py-3.5 mt-2 text-base font-semibold text-center text-white bg-indigo-600 hover:bg-indigo-500 rounded-xl transition-all shadow-[0_0_15px_rgba(79,70,229,0.3)]"
+                  href={resumeFile} 
+                  download="Kerby_Cruz_Resume.pdf"
+                  className="block px-5 py-3.5 mt-2 text-base font-semibold text-center text-[#a395e9] bg-[#a395e9]/10 border border-[#a395e9]/30 hover:bg-[#a395e9]/20 hover:border-[#a395e9]/50 rounded-xl transition-all shadow-[0_0_15px_rgba(163,149,233,0.1)]"
                 >
                   Download Resume
                 </motion.a>

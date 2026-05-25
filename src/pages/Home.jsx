@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Download, ChevronRight } from 'lucide-react';
+import resumeFile from '../assets/resume.pdf';
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
           </p>
           
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <a href="/assets/resume.pdf" download="Kerby_Cruz_Resume" className="btn btn-primary">
+            <a href={resumeFile} download="Kerby_Cruz_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">
               <Download size={20} />
               Download Resume
             </a>
