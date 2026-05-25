@@ -1,0 +1,73 @@
+/*=============== WORK ===============*/
+
+.work__container {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.work__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.work__item {
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 0.25rem 0.75rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.work__card {
+  background-color: var(--surface);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.work__img {
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.work__title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.work__button {
+  width: max-content;
+  color: var(--primary);
+  font-size: 0.813rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
+
+.work__button:hover .work__icon {
+  transform: translateX(0.25rem);
+}
+
+.work__icon {
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+/* Active item work*/
+.active-work {
+  background-color: var(--primary);
+  color: #fff;
+}
