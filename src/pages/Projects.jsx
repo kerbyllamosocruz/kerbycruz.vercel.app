@@ -20,6 +20,7 @@ const projectsData = [
     category: 'Web', 
     img: '/assets/VCSmashers.png',
     desc: 'A badminton court reservation system that allows players to schedule games, manage bookings, and make secure payments online.',
+    livePreview: 'https://vcsmashers.vercel.app', 
     github: 'https://github.com/kerbyllamosocruz/VCSmashers' 
   },
   { 
