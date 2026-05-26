@@ -18,10 +18,13 @@ const InteractiveBackground = ({
     canvas.width = width;
     canvas.height = height;
 
+    // Reduce particle count on smaller screens
+    const actualParticleCount = width < 768 ? Math.floor(particleCount * 0.4) : particleCount;
+
     const particles = [];
     
     // Initialize particles
-    for (let i = 0; i < particleCount; i++) {
+    for (let i = 0; i < actualParticleCount; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
