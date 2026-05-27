@@ -13,18 +13,6 @@ const About = () => {
       year: "2021 - 2023",
       degree: "STEM Strand",
       details: []
-    },
-    {
-      school: "Gen. Tiburcio De Leon National High School",
-      year: "2017 - 2021",
-      degree: "Junior High School",
-      details: []
-    },
-    {
-      school: "Gen. Tiburcio De Leon Elementary School",
-      year: "2011 - 2017",
-      degree: "Primary Education",
-      details: []
     }
   ];
 

@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.png';
-import resumeFile from '../assets/resume.pdf';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -89,7 +88,7 @@ const Navbar = () => {
               </a>
             ))}
             <a 
-              href={resumeFile} 
+              href="/Kerby_Cruz_Resume.pdf" 
               download="Kerby_Cruz_Resume.pdf"
               className="ml-4 px-6 py-2.5 text-sm font-bold text-[#a395e9] bg-[#a395e9]/10 border border-[#a395e9]/30 hover:bg-[#a395e9]/20 hover:border-[#a395e9]/50 rounded-full shadow-[0_0_15px_rgba(163,149,233,0.1)] hover:shadow-[0_0_25px_rgba(163,149,233,0.3)] transition-all duration-300 transform hover:-translate-y-0.5"
             >
@@ -124,7 +123,7 @@ const Navbar = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: navLinks.length * 0.05 }}
-                  href={resumeFile} 
+                  href="/Kerby_Cruz_Resume.pdf" 
                   download="Kerby_Cruz_Resume.pdf"
                   className="block px-5 py-3.5 mt-2 text-base font-semibold text-center text-[#a395e9] bg-[#a395e9]/10 border border-[#a395e9]/30 hover:bg-[#a395e9]/20 hover:border-[#a395e9]/50 rounded-xl transition-all shadow-[0_0_15px_rgba(163,149,233,0.1)]"
                 >
