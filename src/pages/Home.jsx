@@ -23,7 +23,7 @@ const Home = () => {
           </p>
           
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <a href="/Kerby_Cruz_Resume.pdf" download="Kerby_Cruz_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">
+            <a href="/Cruz_Kerby_Resume.pdf" download="Cruz_Kerby_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">
               <Download size={20} />
               Download Resume
             </a>

@@ -88,8 +88,8 @@ const Navbar = () => {
               </a>
             ))}
             <a 
-              href="/Kerby_Cruz_Resume.pdf" 
-              download="Kerby_Cruz_Resume.pdf"
+              href="/Cruz_Kerby_Resume.pdf" 
+              download="Cruz_Kerby_Resume.pdf"
               className="ml-4 px-6 py-2.5 text-sm font-bold text-[#a395e9] bg-[#a395e9]/10 border border-[#a395e9]/30 hover:bg-[#a395e9]/20 hover:border-[#a395e9]/50 rounded-full shadow-[0_0_15px_rgba(163,149,233,0.1)] hover:shadow-[0_0_25px_rgba(163,149,233,0.3)] transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Resume
@@ -123,8 +123,8 @@ const Navbar = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: navLinks.length * 0.05 }}
-                  href="/Kerby_Cruz_Resume.pdf" 
-                  download="Kerby_Cruz_Resume.pdf"
+                  href="/Cruz_Kerby_Resume.pdf" 
+                  download="Cruz_Kerby_Resume.pdf"
                   className="block px-5 py-3.5 mt-2 text-base font-semibold text-center text-[#a395e9] bg-[#a395e9]/10 border border-[#a395e9]/30 hover:bg-[#a395e9]/20 hover:border-[#a395e9]/50 rounded-xl transition-all shadow-[0_0_15px_rgba(163,149,233,0.1)]"
                 >
                   Download Resume
