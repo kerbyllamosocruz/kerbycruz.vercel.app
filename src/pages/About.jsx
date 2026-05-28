@@ -85,7 +85,7 @@ const About = () => {
           </h3>
           <div className="flex flex-col gap-6 relative">
             {/* Timeline line */}
-            <div className="absolute left-[11px] top-[10px] bottom-[10px] w-[2px] bg-white/10"></div>
+            <div className="absolute left-[11px] top-[10px] bottom-[10px] w-[2px] bg-slate-400/30"></div>
 
             {education.map((item, index) => (
               <motion.div 

@@ -6,6 +6,36 @@
   --primary: #6366f1;
   --primary-hover: #4f46e5;
   --secondary: #ec4899;
+  
+  /* Light mode core */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-light: #f1f5f9;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --border: rgba(0, 0, 0, 0.15);
+  --glass: rgba(255, 255, 255, 0.7);
+
+  /* Light mode white/black overrides */
+  --color-white: 0, 0, 0;
+  --color-black: 255, 255, 255;
+
+  /* Light mode slate palette (inverted from dark) */
+  --slate-950: 248, 250, 252;
+  --slate-900: 241, 245, 249;
+  --slate-800: 226, 232, 240;
+  --slate-700: 203, 213, 225;
+  --slate-600: 148, 163, 184;
+  --slate-500: 100, 116, 139;
+  --slate-400: 71, 85, 105;
+  --slate-300: 51, 65, 85;
+  --slate-200: 30, 41, 59;
+  --slate-100: 15, 23, 42;
+  --slate-50: 2, 6, 23;
+}
+
+.dark {
+  /* Dark mode core */
   --bg: #0f172a;
   --surface: #1e293b;
   --surface-light: #334155;
@@ -13,6 +43,23 @@
   --text-muted: #94a3b8;
   --border: rgba(255, 255, 255, 0.1);
   --glass: rgba(15, 23, 42, 0.7);
+
+  /* Dark mode white/black */
+  --color-white: 255, 255, 255;
+  --color-black: 0, 0, 0;
+
+  /* Dark mode slate palette (standard Tailwind) */
+  --slate-50: 248, 250, 252;
+  --slate-100: 241, 245, 249;
+  --slate-200: 226, 232, 240;
+  --slate-300: 203, 213, 225;
+  --slate-400: 148, 163, 184;
+  --slate-500: 100, 116, 139;
+  --slate-600: 71, 85, 105;
+  --slate-700: 51, 65, 85;
+  --slate-800: 30, 41, 59;
+  --slate-900: 15, 23, 42;
+  --slate-950: 2, 6, 23;
 }
 
 * {

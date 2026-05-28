@@ -52,9 +52,8 @@ const InteractiveBackground = ({
     let animationFrameId;
 
     const render = () => {
-      // Clear canvas with background color
-      ctx.fillStyle = '#0f172a'; // Matches your var(--bg)
-      ctx.fillRect(0, 0, width, height);
+      // Clear canvas to let body background show through
+      ctx.clearRect(0, 0, width, height);
 
       // Update and draw particles
       for (let i = 0; i < particles.length; i++) {

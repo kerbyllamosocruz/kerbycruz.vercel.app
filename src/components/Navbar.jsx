@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -19,6 +20,28 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'light') {
+      setIsDark(false);
+      document.documentElement.classList.remove('dark');
+    } else {
+      setIsDark(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const nextDark = !isDark;
+    setIsDark(nextDark);
+    if (nextDark) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  };
 
   const navLinks = [
     { name: 'Home', path: '/#home' },
@@ -57,11 +80,19 @@ const Navbar = () => {
           </NavLink>
           
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden relative z-10 p-2 text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all" 
-            onClick={toggleMenu} 
-            aria-label="Menu"
-          >
+          <div className="md:hidden flex items-center gap-2">
+            <button 
+              className="relative z-10 p-2 text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all" 
+              onClick={toggleTheme} 
+              aria-label="Toggle Theme"
+            >
+              {isDark ? <Sun size={24} /> : <Moon size={24} />}
+            </button>
+            <button 
+              className="relative z-10 p-2 text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all" 
+              onClick={toggleMenu} 
+              aria-label="Menu"
+            >
             <AnimatePresence mode="wait">
               {isOpen ? (
                 <motion.div key="close" initial={{ opacity: 0, rotate: -90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 90 }} transition={{ duration: 0.2 }}>
@@ -73,7 +104,8 @@ const Navbar = () => {
                 </motion.div>
               )}
             </AnimatePresence>
-          </button>
+            </button>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
@@ -94,6 +126,13 @@ const Navbar = () => {
             >
               Resume
             </a>
+            <button 
+              className="ml-2 relative z-10 p-2 text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all" 
+              onClick={toggleTheme} 
+              aria-label="Toggle Theme"
+            >
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
           </nav>
           
           {/* Mobile Navigation Dropdown */}
