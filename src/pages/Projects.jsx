@@ -38,10 +38,18 @@ const projectsData = [
   { id: 'marine-infographics', title: 'Marine Infographics', category: 'Design', img: '/assets/marineinfographics.png', desc: 'An informative infographic about marine life.', livePreview: '/assets/marineinfographics.png' },
   { id: 'book-cover', title: 'Multimedia: Book Cover', category: 'Design', img: '/assets/bookcover.png', desc: 'A creative book cover design project.', livePreview: '/assets/bookcover.png' },
   { id: 'grunge', title: 'Multimedia: Grunge Activity', category: 'Design', img: '/assets/grunge.png', desc: 'A grunge-style design project.', livePreview: '/assets/grunge.png' },
-  { id: 'minimalist', title: 'Multimedia: Minimalist', category: 'Design', img: '/assets/minimalist.png', desc: 'A minimalist design activity.', livePreview: '/assets/minimalist.png' }
+  { id: 'minimalist', title: 'Multimedia: Minimalist', category: 'Design', img: '/assets/minimalist.png', desc: 'A minimalist design activity.', livePreview: '/assets/minimalist.png' },
+  { 
+    id: 'datus-dominion', 
+    title: "The Isle: Datu's Dominion", 
+    category: 'Game', 
+    img: '/assets/game1.png', 
+    desc: "The Isle: Datu's Dominion is a competitive four-player card game based on the King of the Hill format.", 
+    livePreview: 'https://j3no.itch.io/the-isle-datus-dominion' 
+  }
 ];
 
-const categories = ['All', 'Web', 'Java', 'App', 'Design'];
+const categories = ['All', 'Web','Game','Java', 'App', 'Design', ];
 
 const Projects = () => {
   const containerRef = useRef(null);
