@@ -113,15 +113,15 @@ const Projects = () => {
               </ul>
             )}
             
-            <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto', paddingTop: '1rem' }}>
+            <div className="flex gap-3 mt-auto pt-4">
               {project.livePreview && (
-                <a href={project.livePreview} target="_blank" rel="noreferrer" className="work__button">
-                  Demo <ExternalLink size={16} className="work__icon" style={{ marginLeft: '4px' }} />
+                <a href={project.livePreview} target="_blank" rel="noreferrer" className="flex-1 flex items-center justify-center gap-2 py-2 text-sm font-semibold text-white bg-indigo-500 hover:bg-indigo-600 rounded-lg transition-all shadow-sm hover:shadow-md">
+                  Live <ExternalLink size={16} />
                 </a>
               )}
               {project.github && (
-                <a href={project.github} target="_blank" rel="noreferrer" className="work__button">
-                  Code <FaGithub size={16} className="work__icon" style={{ marginLeft: '4px' }} />
+                <a href={project.github} target="_blank" rel="noreferrer" className="flex-1 flex items-center justify-center gap-2 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 rounded-lg transition-all shadow-sm hover:shadow-md">
+                  Code <FaGithub size={16} />
                 </a>
               )}
             </div>
