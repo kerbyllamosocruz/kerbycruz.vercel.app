@@ -51,12 +51,27 @@ const Navbar = () => {
   ];
 
   return (
-    <motion.header 
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 100, damping: 20 }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'pt-2 md:pt-4' : 'pt-4 md:pt-6'}`}
-    >
+    <>
+      {/* Full-screen Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-40 md:hidden"
+            onClick={closeMenu}
+          />
+        )}
+      </AnimatePresence>
+
+      <motion.header 
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", stiffness: 100, damping: 20 }}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'pt-2 md:pt-4' : 'pt-4 md:pt-6'}`}
+      >
       <div className="mx-auto max-w-5xl px-4 md:px-6">
         <div className={`relative flex justify-between items-center px-4 md:px-6 py-3 rounded-2xl md:rounded-full border transition-all duration-500
           ${scrolled 
@@ -174,6 +189,7 @@ const Navbar = () => {
         </div>
       </div>
     </motion.header>
+    </>
   );
 };
 
