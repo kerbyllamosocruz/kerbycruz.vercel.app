@@ -73,7 +73,7 @@ const Connect = () => {
             <Send size={28} className="text-[#a395e9] mb-3" />
             <h4 className="text-lg font-bold text-slate-200 mb-1">Email</h4>
             <span className="text-sm text-slate-400 mb-4">kerbyllamosocruz@gmail.com</span>
-            <a href="mailto:user@gmail.com" className="text-[#a395e9] hover:text-[#a395e9] text-sm font-medium flex items-center gap-1 transition-colors">
+            <a href="mailto:kerbyllamosocruz@gmail.com" className="text-[#a395e9] hover:text-[#a395e9] text-sm font-medium flex items-center gap-1 transition-colors">
               Write Me <span className="text-lg leading-none">→</span>
             </a>
           </div>

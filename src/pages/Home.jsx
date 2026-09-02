@@ -51,7 +51,7 @@ const Home = () => {
           }}>
             <img 
               src="/assets/profile.jpg" 
-              alt="Kerby Cruz" 
+              alt="Kerby Cruz - Full-Stack IT Developer & Software Engineer Portfolio Picture" 
               style={{ 
                 width: '100%', 
                 height: '100%', 

@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
-import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -17,13 +16,13 @@ const Footer = () => {
         </ul>
 
         <div className="flex gap-6 mb-12">
-          <a href="https://facebook.com/kerbyllamosocruz" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-[#a395e9] transition-colors">
+          <a href="https://facebook.com/kerbyllamosocruz" target="_blank" rel="noreferrer" aria-label="Kerby Cruz Facebook Profile" className="text-slate-400 hover:text-[#a395e9] transition-colors">
             <FaFacebook size={24} />
           </a>
-          <a href="https://linkedin.com/in/kerbyllamosocruz" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-[#a395e9] transition-colors">
+          <a href="https://linkedin.com/in/kerbyllamosocruz" target="_blank" rel="noreferrer" aria-label="Kerby Cruz LinkedIn Profile" className="text-slate-400 hover:text-[#a395e9] transition-colors">
             <FaLinkedin size={24} />
           </a>
-          <a href="https://github.com/kerbyllamosocruz" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-[#a395e9] transition-colors">
+          <a href="https://github.com/kerbyllamosocruz" target="_blank" rel="noreferrer" aria-label="Kerby Cruz GitHub Profile" className="text-slate-400 hover:text-[#a395e9] transition-colors">
             <FaGithub size={24} />
           </a>
         </div>

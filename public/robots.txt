@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Host & Sitemap location
+Host: https://kerbycruz.vercel.app
+Sitemap: https://kerbycruz.vercel.app/sitemap.xml

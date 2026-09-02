@@ -16,7 +16,7 @@ const Admin = () => {
         } else {
           throw new Error('Failed to fetch from server');
         }
-      } catch (error) {
+      } catch {
         console.warn("Using localStorage fallback");
         const localData = JSON.parse(localStorage.getItem('messages') || '[]');
         setMessages(localData);
@@ -38,7 +38,7 @@ const Admin = () => {
       } else {
         throw new Error('Failed to delete on server');
       }
-    } catch (error) {
+    } catch {
       const updated = messages.filter(m => m.id !== id);
       setMessages(updated);
       localStorage.setItem('messages', JSON.stringify(updated));
